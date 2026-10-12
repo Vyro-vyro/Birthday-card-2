@@ -733,3 +733,16 @@ if (wishBtn && makeWish && ultimateFinale) {
 if (replayBtnFinal) {
     replayBtnFinal.addEventListener("click", () => window.location.reload());
 }
+
+
+/* Memory Booth gallery button */
+const boothGalleryBtn = document.getElementById("boothGalleryBtn");
+const boothGalleryNote = document.getElementById("boothGalleryNote");
+if (boothGalleryBtn && boothGalleryNote) {
+    boothGalleryBtn.addEventListener("click", () => {
+        boothGalleryNote.hidden = !boothGalleryNote.hidden;
+        boothGalleryBtn.textContent = boothGalleryNote.hidden
+            ? "📸  View Gallery →"
+            : "♡  Memories are precious";
+    });
+}
